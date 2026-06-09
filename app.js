@@ -1,29 +1,80 @@
 const questionBank = {
   romantik: {
     emoji: "❤️",
-    giris: [
-      "Beni düşündüğünde","Gözlerime baktığında","Elimi tuttuğunda","Bana sarıldığında","Sesimi duyduğunda",
-      "İlk tanıştığımız günü düşündüğünde","Geleceğimizi hayal ettiğinde","Beni özlediğinde","Ben yanında olduğumda","Kalbini dinlediğinde"
+    giris: ["Bana ilk mesajını attığında",
+"Benimle ilgili bir anıyı hatırladığında",
+"Birlikte gün batımını izlesek",
+"Uzun süre görüşemesek",
+"Ben sana sürpriz yapsam",
+"Sabah uyandığında beni düşünsen",
+"Benimle ilgili bir şarkı duysan",
+"Bir fotoğrafımıza baktığında",
+"Birlikte çıktığımız ilk yeri hatırladığında",
+"Adımı duyduğunda",
+"Benim için bir mektup yazsan",
+"Birlikte taşınmayı düşünsen",
+"Yıllar sonrasını hayal etsen",
+"Mutlu olduğunda beni düşündüğünde",
+"Canın sıkkınken bana sarılsan",
+"Ben sana sevdiğimi söylesem",
+"Birlikte yıldızları izlesek",
+"Benimle uzun bir yolculuğa çıksan",
+"Eski mesajlarımızı okusan",
+"Birlikte kahve içsek",
+"Yağmur altında yürürken beni düşünsen",
+"Birlikte yeni bir şehir keşfetsek",
+"En sevdiğin anımızı hatırlasan",
+"Birlikte sessizce otursak",
+"Ben sana teşekkür etsem",
+"Birlikte ev kursak",
+"Birlikte yaşlanmayı düşünsen",
+"Ben seni özlediğimi söylesem",
+"İlk kez el ele tuttuğumuz anı hatırlasan",
+"Kalbin beni özlediğinde"
+  
     ],
-    devam: [
-      "en çok ne hissediyorsun","aklına gelen ilk güzel şey ne oluyor","bizim aşkımızı hangi kelime anlatır",
-      "benim hangi huyum seni mutlu ediyor","birlikte yapmak istediğin en güzel şey ne",
-      "hangi anımızı tekrar yaşamak isterdin","beni neden seviyorsun","bizim için ne hayal ediyorsun",
-      "seni en çok ne mutlu ediyor","bana söylemek istediğin en romantik şey ne"
+  devam: [
+  "en çok ne hissediyorsun",
+"beni neden seviyorsun",
+"bana söylemek istediğin şey ne",
+"beni farklı yapan şey ne",
+"hangi anımız kalbinde özel bir yerde",
+"birlikte gerçekleştirmek istediğin hayal ne",
+"beni görünce ilk aklına ne geliyor",
+"bizim hakkımızda en sevdiğin şey ne",
+"beni üç kelimeyle nasıl anlatırsın",
+"benim hangi davranışım seni gülümsetiyor",
+"beni en çok ne zaman özlüyorsun",
+"hangi anımızı sonsuza kadar saklamak isterdin",
+"gelecekte bizim için en büyük dileğin ne",
+"beni düşündüğünde yüzünde gülümseme oluşturan şey ne",
+"hangi özelliğim seni etkiliyor",
+"bana dair unutamadığın şey ne",
+"benimle yapmak istediğin yeni şey ne",
+"ilişkimizde seni en mutlu eden an hangisi",
+"beni neden hayatında istiyorsun",
+"kalbin bana ne söylemek isterdi"
     ]
   },
   eglenceli: {
-    emoji: "😂",
-    giris: [
-      "Bir gün görünmez olsak","Beraber tatile çıksak","Bir filmde oynasak","Telefonlarımız yer değiştirse","Bir yarışmaya katılsak",
-      "Birlikte çocuk olsak","Aynı evde mahsur kalsak","Bir günlüğüne zengin olsak","Beraber yemek yapsak","Dünyayı gezsek"
-    ],
-    devam: [
-      "ilk ne yapardık","en komik olay ne olurdu","hangimiz daha çok panik yapardı","hangimiz daha saçma karar verirdi",
-      "bizi görenler ne derdi","en çok neye gülerdik","kim daha çok yemek yerdi","kim daha çok uyurdu",
-      "hangi konuda tatlı kavga ederdik","hangimiz daha romantik davranırdı"
-    ]
-  },
+  emoji: "😂",
+
+  giris: [
+    "Bir gün görünmez olsak",
+    "Birlikte çocuk olsak",
+    "Aynı evde mahsur kalsak",
+    "Bir yarışmaya katılsak",
+    "Telefonlarımız yer değiştirse"
+  ],
+
+  devam: [
+    "ilk ne yapardık",
+    "en komik olay ne olurdu",
+    "bizi görenler ne derdi",
+    "hangi konuda tatlı kavga ederdik",
+    "hangimiz daha komik olurdu"
+  ]
+},
   derin: {
     emoji: "🌙",
     giris: [
