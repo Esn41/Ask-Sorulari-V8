@@ -100,3 +100,15 @@ button{
 button:active{
   transform:scale(.97);
 }
+  .counter{
+    margin-top:20px;
+    padding:15px;
+    text-align:center;
+    font-size:18px;
+    font-weight:700;
+    border-radius:16px;
+    background:rgba(255,255,255,0.12);
+    backdrop-filter:blur(10px);
+    color:#fff;
+
+}
