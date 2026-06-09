@@ -255,3 +255,14 @@ function copyQuestion() {
             alert("❌ Kopyalama başarısız.");
         });
 }
+
+function randomCategory(){
+  const categories = ["romantik","eglenceli","derin","cesur"];
+
+  const random =
+    categories[Math.floor(Math.random() * categories.length)];
+
+  document.getElementById("category").value = random;
+
+  generateQuestion();
+}
