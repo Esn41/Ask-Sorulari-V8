@@ -165,14 +165,18 @@ function randomItem(arr){
 }
 
 function generateQuestion(){
-  const category = document.getElementById("category").value;
-  const data = questionBank[category];
+    const category = document.getElementById("category").value;
+    const data = questionBank[category];
 
-  const question =
-    `${data.emoji} ${randomItem(data.giris)}, ${randomItem(ekler)} ${randomItem(data.devam)}?`;
+    const question =
+        `${data.emoji} ${randomItem(data.giris)}, ${randomItem(ekler)} ${randomItem(data.devam)}?`;
 
-  document.getElementById("question").innerText = question;
-  updateCounter();
+    document.getElementById("question").innerText = question;
+
+    if(document.getElementById("count")){
+        questionCount++;
+        document.getElementById("count").innerText = questionCount;
+    }
 }
 
 function addFavorite(){
