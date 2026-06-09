@@ -164,72 +164,8 @@ function randomItem(arr){
   return arr[Math.floor(Math.random() * arr.length)];
 }
 
-const kaliteliSorular = {
-  romantik: [
-    "❤️ Beni ilk gördüğünde ne hissettin?",
-    "❤️ Benimle ilgili en sevdiğin anı hangisi?",
-    "❤️ Beni neden seviyorsun?",
-    "❤️ Birlikte yaşamak istediğin en güzel hayal ne?",
-    "❤️ Benim hangi davranışım seni mutlu ediyor?",
-    "❤️ Bizim aşkımızı tek kelimeyle anlatacak olsan ne derdin?",
-    "❤️ Benimle gelecekte nerede olmak isterdin?",
-    "❤️ Bana söylemek istediğin en romantik şey ne?",
-    "❤️ İlişkimizde seni en çok mutlu eden şey ne?",
-    "❤️ Benimle yaşlanmayı hayal ediyor musun?"
-  ],
 
-  eglenceli: [
-    "😂 Beraber görünmez olsak ilk ne yapardık?",
-    "😂 Bir filmde çift olsak hangi film olurdu?",
-    "😂 Hangimiz daha çok trip atar?",
-    "😂 Beraber yarışmaya katılsak kim kazanırdı?",
-    "😂 Benim en komik huyum ne?",
-    "😂 Beraber tatile çıksak en çok neye gülerdik?",
-    "😂 Hangimiz daha çok yemek yer?",
-    "😂 Bir gün çocuk olsak ne yapardık?",
-    "😂 Benimle yaşadığın en komik an hangisi?",
-    "😂 Birlikte saçma bir karar versek bu ne olurdu?"
-  ],
 
-  derin: [
-    "🌙 İlişkimiz sana ne öğretti?",
-    "🌙 Bana en çok hangi konuda güveniyorsun?",
-    "🌙 Sence gerçek sevgi nedir?",
-    "🌙 Zor zamanlarda sana nasıl daha iyi destek olabilirim?",
-    "🌙 Benden en çok ne bekliyorsun?",
-    "🌙 İlişkimizde en güçlü yanımız ne?",
-    "🌙 Bana söylemek isteyip söyleyemediğin bir şey var mı?",
-    "🌙 Sence bizi özel yapan şey ne?",
-    "🌙 Gelecekte bizim için en büyük hayalin ne?",
-    "🌙 Kendini benim yanımda nasıl hissediyorsun?"
-  ],
-
-  cesur: [
-    "🔥 Bende seni en çok etkileyen şey ne?",
-    "🔥 Bana ilk ne zaman farklı hissettin?",
-    "🔥 Aramızdaki en özel çekim ne?",
-    "🔥 Bana itiraf etmek istediğin tatlı bir şey var mı?",
-    "🔥 Beni en çok hangi halimle seviyorsun?",
-    "🔥 Benimle ilgili unutamadığın an hangisi?",
-    "🔥 Bana söylemek isteyip çekindiğin şey ne?",
-    "🔥 Bende en çekici bulduğun özellik ne?",
-    "🔥 Bana uzun uzun baktığında ne düşünüyorsun?",
-    "🔥 Kalbin bana ne söylemek isterdi?"
-  ]
-};
-
-function generateQuestion(){
-  const category = document.getElementById("category").value;
-  const list = kaliteliSorular[category];
-  const question = list[Math.floor(Math.random() * list.length)];
-
-  document.getElementById("question").innerText = question;
-
-  if(document.getElementById("count")){
-    questionCount++;
-    document.getElementById("count").innerText = questionCount;
-  }
-}
 
 function addFavorite(){
    const question = document.getElementById("question").innerText;
@@ -243,7 +179,97 @@ function addFavorite(){
   localStorage.setItem("favorites", JSON.stringify(favorites));
   alert("Favorilere eklendi ⭐");
 }
+const kaliteliSorular = {
+  romantik: [
+    "❤️ Beni ilk gördüğünde ne hissettin?",
+    "❤️ Benimle ilgili en güzel anın ne?",
+    "❤️ Beni neden seviyorsun?",
+    "❤️ Benim hangi davranışım seni mutlu ediyor?",
+    "❤️ Birlikte yaşamak istediğin en güzel hayal ne?"
+  ],
+  eglenceli: [
+    "😂 Beraber görünmez olsak ilk ne yapardık?",
+    "😂 Hangimiz daha çok trip atar?",
+    "😂 Benim en komik huyum ne?",
+    "😂 Beraber tatile çıksak en çok neye gülerdik?",
+    "😂 Bir filmde çift olsak hangi film olurdu?"
+  ],
+  derin: [
+    "🌙 İlişkimiz sana ne öğretti?",
+    "🌙 Sence gerçek sevgi nedir?",
+    "🌙 Bana en çok hangi konuda güveniyorsun?",
+    "🌙 Benden en çok ne bekliyorsun?",
+    "🌙 Gelecekte bizim için en büyük hayalin ne?"
+  ],
+  cesur: [
+    "🔥 Bende seni en çok etkileyen şey ne?",
+    "🔥 Bana ilk ne zaman farklı hissettin?",
+    "🔥 Aramızdaki en özel çekim ne?",
+    "🔥 Bana itiraf etmek istediğin tatlı bir şey var mı?",
+    "🔥 Bende en çekici bulduğun özellik ne?"
+  ]
+};
 
+const soruTemalari = {
+  romantik: [
+    "ilk tanışmamız", "gülüşüm", "sarılmamız", "geleceğimiz", "aşkımız",
+    "birlikte yaşlanmak", "özlemek", "romantik anılar", "hayallerimiz", "bizim hikayemiz"
+  ],
+  eglenceli: [
+    "komik anılarımız", "tatil planımız", "saçma kararlarımız", "film gibi hayatımız", "birlikte oyun oynamak",
+    "çocuk gibi davranmak", "trip atmak", "yemek seçmek", "gece sohbetleri", "birlikte macera yaşamak"
+  ],
+  derin: [
+    "güven", "gelecek", "sevgi", "sadakat", "anlaşılmak",
+    "zor zamanlar", "hayat hedefleri", "korkular", "umutlar", "ilişkimizin gücü"
+  ],
+  cesur: [
+    "çekimimiz", "itiraflar", "kıskançlık", "özlemek", "etkilenmek",
+    "özel anlar", "bakışlar", "kalbinin sesi", "beni düşünmek", "aramızdaki enerji"
+  ]
+};
+
+const kaliplar = [
+  "{tema} hakkında bana en içten ne söylemek istersin?",
+  "{tema} deyince aklına bizimle ilgili hangi an geliyor?",
+  "{tema} konusunda beni en çok ne merak ediyorsun?",
+  "{tema} bizim ilişkimizde nasıl bir yer tutuyor?",
+  "{tema} hakkında bana sormak istediğin özel bir şey var mı?"
+];
+
+function randomItem(arr){
+  return arr[Math.floor(Math.random() * arr.length)];
+}
+
+let questionCount = 0;
+
+function generateQuestion(){
+  const category = document.getElementById("category").value;
+
+  const hazırSorular = kaliteliSorular[category];
+  const temalar = soruTemalari[category];
+
+  let question;
+
+  if(Math.random() < 0.5){
+    question = randomItem(hazırSorular);
+  } else {
+    const tema = randomItem(temalar);
+    const kalip = randomItem(kaliplar);
+    const emoji = category === "romantik" ? "❤️" :
+                  category === "eglenceli" ? "😂" :
+                  category === "derin" ? "🌙" : "🔥";
+
+    question = emoji + " " + kalip.replace("{tema}", tema);
+  }
+
+  document.getElementById("question").innerText = question;
+
+  if(document.getElementById("count")){
+    questionCount++;
+    document.getElementById("count").innerText = questionCount;
+  }
+}
 function showFavorites(){
   if(favorites.length === 0){
     alert("Henüz favori soru yok ❤️");
