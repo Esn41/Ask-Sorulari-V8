@@ -244,3 +244,14 @@ function showFavorites() {
 
     alert(favorites.join("\n\n"));
 }
+function copyQuestion() {
+    const text = document.getElementById("question").innerText;
+
+    navigator.clipboard.writeText(text)
+        .then(() => {
+            alert("📋 Soru kopyalandı!");
+        })
+        .catch(() => {
+            alert("❌ Kopyalama başarısız.");
+        });
+}
