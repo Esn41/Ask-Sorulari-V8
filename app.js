@@ -171,8 +171,8 @@ function generateQuestion(){
   const question =
     `${data.emoji} ${randomItem(data.giris)}, ${randomItem(ekler)} ${randomItem(data.devam)}?`;
 
-  document.getElementById("question").innerText = randomQuestion;
-updateCounter();
+  document.getElementById("question").innerText = question;
+  updateCounter();
 }
 
 function addFavorite(){
