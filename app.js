@@ -171,11 +171,12 @@ function generateQuestion(){
   const question =
     `${data.emoji} ${randomItem(data.giris)}, ${randomItem(ekler)} ${randomItem(data.devam)}?`;
 
-  document.getElementById("question").innerText = question;
+  document.getElementById("question").innerText = randomQuestion;
+updateCounter();
 }
 
 function addFavorite(){
-  const question = document.getElementById("question").innerText;
+   const question = document.getElementById("question").innerText;
 
   if(question.includes("Soru oluşturmak")){
     alert("Önce soru oluştur ❤️");
@@ -197,3 +198,45 @@ function showFavorites(){
 }
 
 window.onload = generateQuestion;
+let questionCount = 0;
+
+function updateCounter() {
+    questionCount++;
+    document.getElementById("count").textContent = questionCount;
+}
+
+function shareWhatsApp() {
+    const text = document.getElementById("question").innerText;
+    window.open(
+        `https://wa.me/?text=${encodeURIComponent(text)}`,
+        "_blank"
+    );
+}
+
+function addFavorite() {
+    const question = document.getElementById("question").innerText;
+
+    let favorites =
+        JSON.parse(localStorage.getItem("favorites")) || [];
+
+    favorites.push(question);
+
+    localStorage.setItem(
+        "favorites",
+        JSON.stringify(favorites)
+    );
+
+    alert("⭐ Favorilere eklendi!");
+}
+
+function showFavorites() {
+    let favorites =
+        JSON.parse(localStorage.getItem("favorites")) || [];
+
+    if (favorites.length === 0) {
+        alert("Henüz favori soru yok ❤️");
+        return;
+    }
+
+    alert(favorites.join("\n\n"));
+}
