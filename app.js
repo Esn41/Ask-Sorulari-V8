@@ -78,25 +78,75 @@ const questionBank = {
   derin: {
     emoji: "🌙",
     giris: [
-      "İlişkimiz hakkında düşündüğünde","Gelecek hayallerini düşündüğünde","Bana güven konusunda","Zor zamanlarda","Kalbini dinlediğinde",
-      "Gerçek sevgiyi düşündüğünde","Bizim bağımızı düşündüğünde","Kendini bana anlatmak istesen","Birlikte büyümeyi düşündüğünde","Hayatı düşündüğünde"
+      "Hayatını düşündüğünde",
+"En büyük hayalini düşündüğünde",
+"Çocukluğunu hatırladığında",
+"Mutlu olmak senin için ne ifade ediyor",
+"Bir gün her şeyi değiştirebilseydin",
+"Hayatındaki dönüm noktasını düşündüğünde",
+"Kendini en yalnız hissettiğinde",
+"Gerçek dostluğu düşündüğünde",
+"Gelecekteki kendine baktığında",
+"Hayatının sonuna geldiğini düşünsen",
+"İnsanlara güvenmek hakkında düşündüğünde",
+"Kalbinin sesini dinlediğinde",
+"En büyük korkunu düşündüğünde",
+"Bir dilek hakkın olsa",
+"Geçmişine dönme şansın olsa"
     ],
     devam: [
-      "sence en önemli şey ne","bana söylemek istediğin ama söyleyemediğin bir şey var mı","bizim en güçlü yanımız ne",
-      "neyi daha iyi yapmamızı isterdin","sana kendini en güvende hissettiren şey ne","ilişkimiz sana ne öğretti",
-      "benden en çok ne bekliyorsun","hangi konuda daha çok anlaşılmak istersin","bizim için en büyük hayalin ne","sence sevgi nasıl korunur"
+     "seni en çok değiştiren olay neydi",
+"hayatta öğrenmek istediğin en önemli şey ne",
+"en büyük korkun nedir",
+"kendinde değiştirmek istediğin şey ne",
+"sence gerçek mutluluk nedir",
+"insanlar seni en çok hangi konuda yanlış anlıyor",
+"hayatında en çok neye minnettarsın",
+"gelecekteki kendine ne söylemek isterdin",
+"hayatındaki en önemli ders neydi",
+"sence insanı güçlü yapan şey nedir",
+"bir şeyi yeniden yaşayabilsen neyi seçerdin",
+"en çok hangi konuda anlaşılmak istiyorsun",
+"hayatının amacı ne olabilir",
+"seni gerçekten mutlu eden şey nedir",
+"gerçek sevgi sana göre nedir"
     ]
   },
   cesur: {
     emoji: "🔥",
     giris: [
-      "Bana bakınca","Ben sana yaklaştığımda","Beni düşündüğünde","Aramızdaki çekimi düşündüğünde","Bana sarıldığında",
-      "Yan yana olduğumuzda","Bana söylemek isteyip çekindiğinde","Kalbin hızlandığında","Beni kıskandığında","Benimle baş başa kaldığında"
+      "Beni özlediğinde",
+"Kalbin hızlandığında",
+"Beni gördüğünde",
+"Mesajımı aldığında",
+"Benimle yalnız kaldığında",
+"Bana sürpriz yapmak istesen",
+"Benim hakkımda hayal kurduğunda",
+"Beni kıskandığında",
+"Sesimi duyduğunda",
+"Bana uzun uzun baktığında",
+"Benimle ilgili düşündüğünde",
+"Adımı duyduğunda",
+"Beni beklediğinde",
+"Bir fotoğrafıma baktığında",
+"Benimle ilgili bir anıyı hatırladığında"
     ],
     devam: [
-      "aklından geçen ilk şey ne oluyor","seni en çok etkileyen şey ne","bende en çekici bulduğun şey ne",
-      "bana itiraf etmek istediğin tatlı bir şey var mı","hangi anı unutamıyorsun","beni en çok ne zaman özlüyorsun",
-      "aramızdaki en özel şey ne","bana hangi cümleyi söylemek isterdin","beni hangi halimle daha çok seviyorsun","sence aramızdaki enerji nasıl"
+      "beni en çok hangi halimle seviyorsun",
+"aklına gelen ilk romantik şey ne",
+"bana söylemek isteyip söyleyemediğin şey ne",
+"aramızdaki en çekici şey ne",
+"beni en çok ne zaman özlüyorsun",
+"bana dair unutamadığın an hangisi",
+"beni üç kelimeyle nasıl anlatırsın",
+"hangi özelliğim seni etkiliyor",
+"benimle ilgili en sevdiğin anı hangisi",
+"kalbin bana ne söylemek isterdi",
+"beni ilk gördüğünde ne hissettin",
+"aramızdaki en güzel şey ne",
+"benim hangi davranışım seni mutlu ediyor",
+"bana söylemek istediğin özel bir şey var mı",
+"gelecekte bizim için en büyük hayalin ne"
     ]
   }
 };
