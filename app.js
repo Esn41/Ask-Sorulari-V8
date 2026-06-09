@@ -164,19 +164,71 @@ function randomItem(arr){
   return arr[Math.floor(Math.random() * arr.length)];
 }
 
+const kaliteliSorular = {
+  romantik: [
+    "❤️ Beni ilk gördüğünde ne hissettin?",
+    "❤️ Benimle ilgili en sevdiğin anı hangisi?",
+    "❤️ Beni neden seviyorsun?",
+    "❤️ Birlikte yaşamak istediğin en güzel hayal ne?",
+    "❤️ Benim hangi davranışım seni mutlu ediyor?",
+    "❤️ Bizim aşkımızı tek kelimeyle anlatacak olsan ne derdin?",
+    "❤️ Benimle gelecekte nerede olmak isterdin?",
+    "❤️ Bana söylemek istediğin en romantik şey ne?",
+    "❤️ İlişkimizde seni en çok mutlu eden şey ne?",
+    "❤️ Benimle yaşlanmayı hayal ediyor musun?"
+  ],
+
+  eglenceli: [
+    "😂 Beraber görünmez olsak ilk ne yapardık?",
+    "😂 Bir filmde çift olsak hangi film olurdu?",
+    "😂 Hangimiz daha çok trip atar?",
+    "😂 Beraber yarışmaya katılsak kim kazanırdı?",
+    "😂 Benim en komik huyum ne?",
+    "😂 Beraber tatile çıksak en çok neye gülerdik?",
+    "😂 Hangimiz daha çok yemek yer?",
+    "😂 Bir gün çocuk olsak ne yapardık?",
+    "😂 Benimle yaşadığın en komik an hangisi?",
+    "😂 Birlikte saçma bir karar versek bu ne olurdu?"
+  ],
+
+  derin: [
+    "🌙 İlişkimiz sana ne öğretti?",
+    "🌙 Bana en çok hangi konuda güveniyorsun?",
+    "🌙 Sence gerçek sevgi nedir?",
+    "🌙 Zor zamanlarda sana nasıl daha iyi destek olabilirim?",
+    "🌙 Benden en çok ne bekliyorsun?",
+    "🌙 İlişkimizde en güçlü yanımız ne?",
+    "🌙 Bana söylemek isteyip söyleyemediğin bir şey var mı?",
+    "🌙 Sence bizi özel yapan şey ne?",
+    "🌙 Gelecekte bizim için en büyük hayalin ne?",
+    "🌙 Kendini benim yanımda nasıl hissediyorsun?"
+  ],
+
+  cesur: [
+    "🔥 Bende seni en çok etkileyen şey ne?",
+    "🔥 Bana ilk ne zaman farklı hissettin?",
+    "🔥 Aramızdaki en özel çekim ne?",
+    "🔥 Bana itiraf etmek istediğin tatlı bir şey var mı?",
+    "🔥 Beni en çok hangi halimle seviyorsun?",
+    "🔥 Benimle ilgili unutamadığın an hangisi?",
+    "🔥 Bana söylemek isteyip çekindiğin şey ne?",
+    "🔥 Bende en çekici bulduğun özellik ne?",
+    "🔥 Bana uzun uzun baktığında ne düşünüyorsun?",
+    "🔥 Kalbin bana ne söylemek isterdi?"
+  ]
+};
+
 function generateQuestion(){
-    const category = document.getElementById("category").value;
-    const data = questionBank[category];
+  const category = document.getElementById("category").value;
+  const list = kaliteliSorular[category];
+  const question = list[Math.floor(Math.random() * list.length)];
 
-    const question =
-        `${data.emoji} ${randomItem(data.giris)}, ${randomItem(ekler)} ${randomItem(data.devam)}?`;
+  document.getElementById("question").innerText = question;
 
-    document.getElementById("question").innerText = question;
-
-    if(document.getElementById("count")){
-        questionCount++;
-        document.getElementById("count").innerText = questionCount;
-    }
+  if(document.getElementById("count")){
+    questionCount++;
+    document.getElementById("count").innerText = questionCount;
+  }
 }
 
 function addFavorite(){
