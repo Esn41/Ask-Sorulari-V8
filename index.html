@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aşk Soruları V8</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+  <header class="header">
+    <div class="logo">❤️</div>
+    <h1>Aşk Soruları V8</h1>
+    <p>20.000+ Özel Soru</p>
+  </header>
+
+  <div class="question-card">
+    <div id="question">
+      Soru oluşturmak için aşağıdaki butona bas ❤️
+    </div>
+  </div>
+
+  <div class="controls">
+
+    <select id="category">
+      <option value="romantik">❤️ Romantik</option>
+      <option value="eglenceli">😂 Eğlenceli</option>
+      <option value="derin">🌙 Derin</option>
+      <option value="cesur">🔥 Cesur</option>
+    </select>
+
+    <button onclick="generateQuestion()">
+      Yeni Soru Oluştur
+    </button>
+
+    <button onclick="addFavorite()">
+      Favorilere Ekle ⭐
+    </button>
+
+    <button onclick="showFavorites()">
+      Favorilerim ❤️
+    </button>
+
+  </div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
