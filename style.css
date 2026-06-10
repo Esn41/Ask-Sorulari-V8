@@ -139,3 +139,56 @@ button:active{
   transition:transform .35s ease, opacity .35s ease;
 
 }
+.header{
+  position:relative;
+}
+
+#menuBtn{
+  position:absolute;
+  top:15px;
+  right:15px;
+  width:55px;
+  height:55px;
+  border:none;
+  border-radius:50%;
+  background:rgba(255,255,255,.15);
+  backdrop-filter:blur(15px);
+  font-size:24px;
+  cursor:pointer;
+}
+
+.menu{
+  display:none;
+  position:absolute;
+  top:80px;
+  right:15px;
+  z-index:999;
+  background:rgba(20,20,40,.95);
+  border-radius:18px;
+  padding:10px;
+  min-width:180px;
+}
+
+.menu button{
+  width:100%;
+  margin:5px 0;
+}
+
+.question-card{
+  position:relative;
+}
+
+.star-btn{
+  position:absolute;
+  top:15px;
+  right:15px;
+  width:50px;
+  height:50px;
+  border:none;
+  border-radius:50%;
+  background:rgba(255,255,255,.15);
+  backdrop-filter:blur(15px);
+  font-size:24px;
+  color:#ffd84d;
+  cursor:pointer;
+}
