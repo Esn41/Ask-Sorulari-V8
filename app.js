@@ -1022,19 +1022,7 @@ function generateQuestion(){
 
     if(question === lastQuestion && list.length > 1){
       question = randomItem(list);
-    }
-
-    lastQuestion = question;
-    document.getElementById("question").innerText = question;
-
-    questionCount++;
-
-    const count = document.getElementById("count");
-    if(count) count.innerText = questionCount;
-
-    card.classList.remove("flip");
-
-  }, 250);
+    
 }
   
 
