@@ -72,11 +72,21 @@ backdrop-filter:blur(20px);
 transition:all .35s ease;
 animation:slideUp .4s ease;
 }
-
-.question-card.change{
-opacity:0;
-transform:translateX(-100px) rotateY(-15deg) scale(.9);
+  .question-card:hover{
+  transform:translateY(-4px);
+  }
+    .question-card.change{
+  opacity:0;
+  transform:
+    translateX(-120px)
+    rotateY(-18deg)
+    scale(.88);
 }
+}
+
+
+
+
 
 @keyframes slideUp{
 from{
