@@ -1024,7 +1024,19 @@ function generateQuestion(){
   }
 
   lastQuestion = question;
+const badge = document.getElementById("categoryBadge");
 
+if(badge){
+  const names = {
+    romantik: "❤️ Romantik",
+    eglenceli: "😂 Eğlenceli",
+    derin: "🌙 Derin",
+    cesur: "🔥 Cesur"
+  };
+
+  badge.innerText = names[category];
+}
+  
   const questionBox = document.getElementById("question");
   const card = document.querySelector(".question-card");
 
@@ -1072,6 +1084,8 @@ let historyQuestions = [];
 window.addEventListener("load", () => {
   const card = document.querySelector(".question-card");
   const questionBox = document.getElementById("question");
+const badge = document.getElementById("categoryBadge");
+
 
   if (!card || !questionBox) return;
 
