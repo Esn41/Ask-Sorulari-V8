@@ -1067,4 +1067,21 @@ function randomCategory(){
 
 window.onload = generateQuestion;
 
+let startX = 0;
 
+const card = document.querySelector(".question-card");
+
+if(card){
+  card.addEventListener("touchstart", function(e){
+    startX = e.touches[0].clientX;
+  });
+
+  card.addEventListener("touchend", function(e){
+    const endX = e.changedTouches[0].clientX;
+    const diff = endX - startX;
+
+    if(Math.abs(diff) > 60){
+      generateQuestion();
+    }
+  });
+}
