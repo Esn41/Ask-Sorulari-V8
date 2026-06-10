@@ -1009,20 +1009,29 @@ function randomItem(arr){
 }
 
 function generateQuestion(){
-
-  const card = document.querySelector(".question-card");
   const category = document.getElementById("category").value;
   const list = data[category];
 
-  card.classList.add("flip");
+  if(!list || list.length === 0){
+    alert("Bu kategoride soru yok");
+    return;
+  }
 
-  setTimeout(() => {
+  let question = randomItem(list);
 
-    let question = randomItem(list);
+  if(question === lastQuestion && list.length > 1){
+    question = randomItem(list);
+  }
 
-    if(question === lastQuestion && list.length > 1){
-      question = randomItem(list);
-    
+  lastQuestion = question;
+
+  const questionBox = document.getElementById("question");
+  if(questionBox) questionBox.innerText = question;
+
+  questionCount++;
+
+  const count = document.getElementById("count");
+  if(count) count.innerText = questionCount;
 }
   
 
