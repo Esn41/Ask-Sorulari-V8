@@ -1065,23 +1065,24 @@ function randomCategory(){
   generateQuestion();
 }
 
-window.onload = generateQuestion;
+window.addEventListener("load", generateQuestion);
 
-let startX = 0;
+window.addEventListener("DOMContentLoaded", () => {
+  let startX = 0;
+  const card = document.querySelector(".question-card");
 
-const card = document.querySelector(".question-card");
+  if(!card) return;
 
-if(card){
-  card.addEventListener("touchstart", function(e){
+  card.addEventListener("touchstart", (e) => {
     startX = e.touches[0].clientX;
   });
 
-  card.addEventListener("touchend", function(e){
+  card.addEventListener("touchend", (e) => {
     const endX = e.changedTouches[0].clientX;
     const diff = endX - startX;
 
-    if(Math.abs(diff) > 60){
+    if(Math.abs(diff) > 50){
       generateQuestion();
     }
   });
-}
+});
