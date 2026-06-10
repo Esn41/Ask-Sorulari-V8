@@ -1070,3 +1070,33 @@ function toggleSideMenu(){
   const menu = document.getElementById("sideMenu");
   menu.classList.toggle("open");
 }
+let startX = 0;
+let currentQuestion = "";
+let previousQuestion = "";
+
+window.addEventListener("DOMContentLoaded", () => {
+  const card = document.querySelector(".question-card");
+  const questionBox = document.getElementById("question");
+
+  if(!card || !questionBox) return;
+
+  card.addEventListener("touchstart", (e) => {
+    startX = e.touches[0].clientX;
+  });
+
+  card.addEventListener("touchend", (e) => {
+    const endX = e.changedTouches[0].clientX;
+    const diff = endX - startX;
+
+    if(diff > 60){
+      previousQuestion = currentQuestion;
+      generateQuestion();
+      currentQuestion = questionBox.innerText;
+    }
+
+    if(diff < -60 && previousQuestion){
+      questionBox.innerText = previousQuestion;
+      currentQuestion = previousQuestion;
+    }
+  });
+});
