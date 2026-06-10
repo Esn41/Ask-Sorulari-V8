@@ -1067,22 +1067,3 @@ function randomCategory(){
 
 window.addEventListener("load", generateQuestion);
 
-window.addEventListener("DOMContentLoaded", () => {
-  let startX = 0;
-  const card = document.querySelector(".question-card");
-
-  if(!card) return;
-
-  card.addEventListener("touchstart", (e) => {
-    startX = e.touches[0].clientX;
-  });
-
-  card.addEventListener("touchend", (e) => {
-    const endX = e.changedTouches[0].clientX;
-    const diff = endX - startX;
-
-    if(Math.abs(diff) > 50){
-      generateQuestion();
-    }
-  });
-});
