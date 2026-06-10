@@ -1079,7 +1079,7 @@ window.addEventListener("DOMContentLoaded", () => {
   const questionBox = document.getElementById("question");
 
   if(!card || !questionBox) return;
-
+currentQuestion = questionBox.innerText;
   card.addEventListener("touchstart", (e) => {
     startX = e.touches[0].clientX;
   });
@@ -1089,10 +1089,14 @@ window.addEventListener("DOMContentLoaded", () => {
     const diff = endX - startX;
 
     if(diff > 60){
-      previousQuestion = currentQuestion;
-      generateQuestion();
-      currentQuestion = questionBox.innerText;
-    }
+  previousQuestion = questionBox.innerText;
+
+  generateQuestion();
+
+  setTimeout(() => {
+    currentQuestion = questionBox.innerText;
+  }, 350);
+}
 
     if(diff < -60 && previousQuestion){
       questionBox.innerText = previousQuestion;
