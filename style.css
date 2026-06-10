@@ -247,3 +247,21 @@ button:active{
   border:2px solid #ff2845 !important;
   box-shadow:0 0 30px rgba(255,0,45,.45);
 }
+.start-btn{
+  min-height:90px !important;
+  font-size:28px !important;
+  border-radius:30px !important;
+  margin-top:25px !important;
+
+  background:
+    linear-gradient(
+      135deg,
+      #ff2048,
+      #c4002c,
+      #050505
+    ) !important;
+
+  box-shadow:
+    0 0 40px rgba(255,0,45,.45),
+    0 25px 50px rgba(0,0,0,.8);
+}
