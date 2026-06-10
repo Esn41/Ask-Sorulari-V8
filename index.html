@@ -32,9 +32,13 @@
     </select>
 
     <button onclick="generateQuestion()">Yeni Soru Oluştur</button>
-    <button onclick="copyQuestion()">Soruyu Kopyala 📋</button>
-    <button onclick="randomCategory()">🎲 Rastgele Kategori</button>
-    <button onclick="shareWhatsApp()">WhatsApp'ta Paylaş 📤</button>
+    <button id="sideToggle" onclick="toggleSideMenu()">›</button>
+
+<div id="sideMenu" class="side-menu">
+  <button onclick="copyQuestion()">📋 Kopyala</button>
+  <button onclick="randomCategory()">🎲 Rastgele</button>
+  <button onclick="shareWhatsApp()">📤 WhatsApp</button>
+</div>
 
     <div class="counter">
       Üretilen Soru: <span id="count">0</span>
