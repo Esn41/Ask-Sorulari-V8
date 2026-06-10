@@ -1104,12 +1104,23 @@ function toggleFavorite(question) {
 function renderFavorites() {
   const favoritesList = document.getElementById("favoritesList");
 
-  if (!favoritesList) return;
-
-  favoritesList.innerHTML = favorites
-    .map(q => `<div class="favorite-item">${q}</div>`)
-    .join("");
+  if (!favoritesList) 
+    favoritesList.innerHTML = favorites
+  .map((q, i) => `
+    <div class="favorite-item">
+      <span>${q}</span>
+      <button class="delete-fav" onclick="removeFavorite(${i})">
+        🗑️
+      </button>
+    </div>
+  `)
+  .join("");
 }
 document.addEventListener("DOMContentLoaded", () => {
   renderFavorites();
 });
+function removeFavorite(index) {
+  favorites.splice(index, 1);
+  localStorage.setItem("favorites", JSON.stringify(favorites));
+  renderFavorites();
+}
