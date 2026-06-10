@@ -192,3 +192,43 @@ button:active{
   color:#ffd84d;
   cursor:pointer;
 }
+.favorite-item{
+  background:rgba(255,255,255,.08);
+  padding:12px;
+  margin:10px 0;
+  border-radius:12px;
+  color:white;
+}
+.home-btn,
+.favorite-btn{
+    width:42px;
+    height:42px;
+    font-size:18px;
+}
+.question-card{
+    animation:slideUp .4s ease;
+}
+
+@keyframes slideUp{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}.question-card{
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(20px);
+    border:1px solid rgba(255,255,255,.1);
+    box-shadow:0 8px 30px rgba(0,0,0,.35);
+}
+body{
+  background:linear-gradient(
+    135deg,
+    #081120,
+    #0f1f3d,
+    #081120
+  );
+}
