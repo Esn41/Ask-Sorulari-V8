@@ -1110,3 +1110,6 @@ function renderFavorites() {
     .map(q => `<div class="favorite-item">${q}</div>`)
     .join("");
 }
+document.addEventListener("DOMContentLoaded", () => {
+  renderFavorites();
+});
