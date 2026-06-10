@@ -1036,7 +1036,7 @@ if(card){
         card.classList.remove("change");
     }, 300);
 }
-
+}
   
   
 
