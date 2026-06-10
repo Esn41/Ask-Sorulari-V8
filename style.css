@@ -137,9 +137,5 @@ button:active{
 }
 .question-card{
   transition:transform .35s ease, opacity .35s ease;
-}
 
-.question-card.flip{
-  transform:rotateY(90deg) scale(.96);
-  opacity:.25;
 }
