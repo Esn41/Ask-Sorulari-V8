@@ -1026,7 +1026,16 @@ function generateQuestion(){
   lastQuestion = question;
 
   const questionBox = document.getElementById("question");
-  if(questionBox) questionBox.innerText = question;
+  const card = document.querySelector(".question-card");
+
+if(card){
+    card.classList.add("change");
+
+    setTimeout(() => {
+        questionBox.innerText = question;
+        card.classList.remove("change");
+    }, 300);
+}
 
   questionCount++;
 
