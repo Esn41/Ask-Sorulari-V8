@@ -1066,4 +1066,7 @@ function randomCategory(){
 }
 
 window.addEventListener("load", generateQuestion);
-
+function toggleSideMenu(){
+  const menu = document.getElementById("sideMenu");
+  menu.classList.toggle("open");
+}
