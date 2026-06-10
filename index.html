@@ -21,12 +21,29 @@
 
     <h2>Kategori Seç</h2>
 
-    <select id="homeCategory">
-      <option value="romantik">❤️ Romantik</option>
-      <option value="eglenceli">😂 Eğlenceli</option>
-      <option value="derin">🌙 Derin</option>
-      <option value="cesur">🔥 Cesur</option>
-    </select>
+    <div class="category-grid">
+  <button class="category-card active" onclick="selectHomeCategory('romantik', this)">
+    <span>❤️</span>
+    <strong>Romantik</strong>
+  </button>
+
+  <button class="category-card" onclick="selectHomeCategory('eglenceli', this)">
+    <span>😂</span>
+    <strong>Eğlenceli</strong>
+  </button>
+
+  <button class="category-card" onclick="selectHomeCategory('derin', this)">
+    <span>🌙</span>
+    <strong>Derin</strong>
+  </button>
+
+  <button class="category-card" onclick="selectHomeCategory('cesur', this)">
+    <span>🔥</span>
+    <strong>Cesur</strong>
+  </button>
+</div>
+
+<input type="hidden" id="homeCategory" value="romantik">
 
     <button onclick="startQuestions()">
       ❤️ Sorulara Başla
