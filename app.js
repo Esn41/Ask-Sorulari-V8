@@ -1070,33 +1070,7 @@ function toggleSideMenu(){
   const menu = document.getElementById("sideMenu");
   menu.classList.toggle("open");
 }
-let startX = 0;
-let historyQuestions = [];
 
-window.addEventListener("load", () => {
-  const card = document.querySelector(".question-card");
-  const questionBox = document.getElementById("question");
-
-  if(!card || !questionBox) return;
-
-  card.addEventListener("touchstart", (e) => {
-    startX = e.touches[0].clientX;
-  });
-
-  card.addEventListener("touchend", (e) => {
-    const endX = e.changedTouches[0].clientX;
-    const diff = endX - startX;
-
-    if(diff > 70){
-      historyQuestions.push(questionBox.innerText);
-      generateQuestion();
-    }
-
-    if(diff < -70 && historyQuestions.length > 0){
-      questionBox.innerText = historyQuestions.pop();
-    }
-  });
-});
   
 
   
