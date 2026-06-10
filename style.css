@@ -254,3 +254,35 @@ font-size:22px;
   touch-action: pan-y;
   user-select: none;
 }
+.page{
+  display:none;
+}
+
+.page.active{
+  display:block;
+}
+
+.big-card{
+  min-height:420px;
+  margin-top:30px;
+}
+
+.back-btn{
+  min-height:52px;
+  font-size:18px;
+  border-radius:18px;
+  margin-bottom:18px;
+}
+
+#homePage button,
+#loginPage button,
+#aboutPage button{
+  margin-top:16px;
+}
+
+#loginPage p,
+#aboutPage p{
+  font-size:22px;
+  line-height:1.5;
+  color:rgba(255,255,255,.8);
+}
