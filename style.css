@@ -213,29 +213,30 @@ font-size:22px;
 }
 #sideToggle{
   position:fixed;
-  left:10px;
-  top:140px;
-  width:45px;
-  height:45px;
-  border:none;
+  left:12px;
+  bottom:120px;
+  width:48px;
+  height:48px;
+  min-height:48px;
   border-radius:50%;
-  background:linear-gradient(135deg,#ff2f93,#7c2cff);
-  color:white;
-  font-size:24px;
-  font-weight:900;
   z-index:9999;
-  box-shadow:0 8px 25px rgba(151,38,220,.5);
+  font-size:26px;
+  padding:0;
+
 }
-}
+
 
 .side-menu{
   position:fixed;
   left:-260px;
-  top:50%;
-  transform:translateY(-50%);
-  width:240px;
+  bottom:175px;
+  width:220px;
   z-index:9998;
   transition:.3s;
+}
+
+.side-menu.open{
+  left:12px;
 }
 
 .side-menu.open{
