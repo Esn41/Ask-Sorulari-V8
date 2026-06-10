@@ -250,3 +250,7 @@ font-size:22px;
 .question-card{
   touch-action:pan-y;
 }
+.question-card{
+  touch-action: pan-y;
+  user-select: none;
+}
