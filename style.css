@@ -135,3 +135,11 @@ button:active{
   button{font-size:21px;min-height:70px}
   select{font-size:22px}
 }
+.question-card{
+  transition:transform .35s ease, opacity .35s ease;
+}
+
+.question-card.flip{
+  transform:rotateY(90deg) scale(.96);
+  opacity:.25;
+}
