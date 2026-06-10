@@ -1100,3 +1100,23 @@ window.addEventListener("load", () => {
 
   document.getElementById(pageId).classList.add("active");
 }
+function showPage(pageId){
+  document.querySelectorAll(".page").forEach(page => {
+    page.classList.remove("active");
+  });
+
+  document.getElementById(pageId).classList.add("active");
+}
+
+function startQuestions(){
+
+  const selected =
+    document.getElementById("homeCategory").value;
+
+  document.getElementById("category").value =
+    selected;
+
+  showPage("questionPage");
+
+  generateQuestion();
+}
