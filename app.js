@@ -1070,3 +1070,7 @@ function toggleSideMenu(){
   const menu = document.getElementById("sideMenu");
   menu.classList.toggle("open");
 }
+function toggleSideMenu(){
+  const menu = document.getElementById("sideMenu");
+  menu.classList.toggle("open");
+}
