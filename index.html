@@ -3,49 +3,60 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Aşk Soruları v8 </title>
+<title>Aşk Soruları</title>
 <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
 <div class="app">
-
-  <header class="header">
-    <div class="logo">❤️</div>
-    <h1>Aşk Soruları</h1>
-<p>Partnerine Sorabileceğin En Güzel Sorular ❤️</p>
-  </header>
-
-  <div class="question-card">
-    <div id="question">
-      Soru oluşturmak için aşağıdaki butona bas ❤️
+  <!-- ANA SAYFA -->
+  <section id="homePage" class="page active">
+    <header class="header">
+      <div class="logo">❤️</div>
+      <h1>Aşk Soruları</h1>
+      <p>Partnerine Sorabileceğin En Güzel Sorular ❤️</p>
+    </header>
+    <button onclick="showPage('questionPage')">Sorulara Başla ❤️</button>
+    <button onclick="showPage('loginPage')">Kayıt / Giriş 👤</button>
+    <button onclick="showPage('aboutPage')">Uygulama Hakkında ℹ️</button>
+  </section>
+  <!-- SORU SAYFASI -->
+  <section id="questionPage" class="page">
+    <button class="back-btn" onclick="showPage('homePage')">← Ana Sayfa</button>
+    <div class="question-card big-card">
+      <div id="question">
+        Soru oluşturmak için aşağıdaki butona bas ❤️
+      </div>
     </div>
-  </div>
-
-  <div class="controls">
-    <select id="category">
-      <option value="romantik">❤️ Romantik</option>
-      <option value="eglenceli">😂 Eğlenceli</option>
-      <option value="derin">🌙 Derin</option>
-      <option value="cesur">🔥 Cesur</option>
-    </select>
-
-    <button onclick="generateQuestion()">Yeni Soru Oluştur</button>
-    
-
-    
-  </div>
-
+    <div class="controls">
+      <select id="category">
+        <option value="romantik">❤️ Romantik</option>
+        <option value="eglenceli">😂 Eğlenceli</option>
+        <option value="derin">🌙 Derin</option>
+        <option value="cesur">🔥 Cesur</option>
+      </select>
+      <button onclick="generateQuestion()">Yeni Soru Oluştur</button>
+    </div>
+  </section>
+  <!-- GİRİŞ SAYFASI -->
+  <section id="loginPage" class="page">
+    <button class="back-btn" onclick="showPage('homePage')">← Ana Sayfa</button>
+    <h1>Kayıt / Giriş</h1>
+    <p>Yakında kullanıcı profili, kayıt ve giriş sistemi eklenecek.</p>
+    <button>Google ile Giriş 🔐</button>
+    <button>Misafir Olarak Devam Et ❤️</button>
+  </section>
+  <!-- HAKKINDA SAYFASI -->
+  <section id="aboutPage" class="page">
+    <button class="back-btn" onclick="showPage('homePage')">← Ana Sayfa</button>
+    <h1>Uygulama Hakkında</h1>
+    <p>
+      Aşk Soruları, partnerinle daha yakın ve samimi konuşmalar yapman için hazırlanmış özel soru uygulamasıdır.
+    </p>
+    <p>
+      Romantik, eğlenceli, derin ve cesur kategorilerle ilişkinize özel konuşma başlatır.
+    </p>
+  </section>
 </div>
-<button id="sideToggle" onclick="toggleSideMenu()">›</button>
-
-<div id="sideMenu" class="side-menu">
-  <button onclick="copyQuestion()">📋 Kopyala</button>
-  <button onclick="randomCategory()">🎲 Rastgele</button>
-  <button onclick="shareWhatsApp()">📤 WhatsApp</button>
-</div>
-<script src="app.js?v=20"></script>
-
+<script src="app.js?v=22"></script>
 </body>
-</html>
+</htm
