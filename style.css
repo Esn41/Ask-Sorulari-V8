@@ -214,7 +214,7 @@ font-size:22px;
 #sideToggle{
   position:fixed;
   left:12px;
-  top:60px;
+  top:10px !important;
   width:48px;
   height:48px;
   min-height:48px;
