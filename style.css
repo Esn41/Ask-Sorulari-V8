@@ -19,7 +19,7 @@ overflow-x:hidden;
 width:100%;
 max-width:430px;
 margin:0 auto;
-padding:28px 14px 80px;
+padding:70px 14px 80px;
 }
 
 .header{
@@ -37,8 +37,8 @@ filter:drop-shadow(0 0 14px rgba(255,120,170,.9));
 }
 
 h1{
-margin:18px 0 8px;
-font-size:43px;
+margin:8px 0 8px;
+font-size:38px;
 line-height:1;
 font-weight:900;
 color:#fff;
