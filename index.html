@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Aşk Soruları V8</title>
-
 <link rel="stylesheet" href="style.css">
 </head>
 
@@ -14,32 +13,17 @@
 
   <header class="header">
     <div class="logo">❤️</div>
-
-<button id="menuBtn" onclick="toggleMenu()">🏠</button>
-
-<div id="menu" class="menu">
-  <button onclick="showFavorites()">⭐ Favoriler</button>
-</div>
-
-<h1>Aşk Soruları V8</h1>
-<p>20.000+ Özel Soru</p>
-  <div id="favCounter">⭐ Favoriler: 0</div>  
+    <h1>Aşk Soruları V8</h1>
+    <p>20.000+ Özel Soru</p>
   </header>
 
   <div class="question-card">
-
-  <button class="star-btn" onclick="toggleFavorite(document.getElementById('question').innerText)">
-    ⭐
-  </button>
-
-  <div id="question">
-    Soru oluşturmak için aşağıdaki butona bas ❤️
+    <div id="question">
+      Soru oluşturmak için aşağıdaki butona bas ❤️
+    </div>
   </div>
 
-</div>
-
   <div class="controls">
-
     <select id="category">
       <option value="romantik">❤️ Romantik</option>
       <option value="eglenceli">😂 Eğlenceli</option>
@@ -47,33 +31,19 @@
       <option value="cesur">🔥 Cesur</option>
     </select>
 
-    <button onclick="generateQuestion()">
-      Yeni Soru Oluştur
-    </button>
+    <button onclick="generateQuestion()">Yeni Soru Oluştur</button>
+    <button onclick="copyQuestion()">Soruyu Kopyala 📋</button>
+    <button onclick="randomCategory()">🎲 Rastgele Kategori</button>
+    <button onclick="shareWhatsApp()">WhatsApp'ta Paylaş 📤</button>
 
-
-<button onclick="copyQuestion()">
-    Soruyu Kopyala 📋
-</button>
-    <button onclick="randomCategory()">
-  🎲 Rastgele Kategori
-</button>
-<button onclick="shareWhatsApp()">
-  WhatsApp'ta Paylaş 📤
-</button>
-
-<div class="counter">
-  Üretilen Soru: <span id="count">0</span>
-</div>
-    
+    <div class="counter">
+      Üretilen Soru: <span id="count">0</span>
+    </div>
   </div>
 
 </div>
 
-<script src="app.js?v=16"></script>
-<div id="homePage" class="page">
-  <h2>⭐ Favoriler</h2>
-  <div id="favoritesList"></div>
-</div>
+<script src="app.js?v=17"></script>
+
 </body>
 </html>
