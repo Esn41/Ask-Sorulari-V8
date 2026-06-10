@@ -14,15 +14,28 @@
 
   <header class="header">
     <div class="logo">❤️</div>
-    <h1>Aşk Soruları V8</h1>
-    <p>20.000+ Özel Soru</p>
+
+<button id="menuBtn" onclick="toggleMenu()">🏠</button>
+
+<div id="menu" class="menu">
+  <button onclick="showFavorites()">⭐ Favoriler</button>
+</div>
+
+<h1>Aşk Soruları V8</h1>
+<p>20.000+ Özel Soru</p>
   </header>
 
   <div class="question-card">
-    <div id="question">
-      Soru oluşturmak için aşağıdaki butona bas ❤️
-    </div>
+
+  <button class="star-btn" onclick="addFavorite()">
+    ⭐
+  </button>
+
+  <div id="question">
+    Soru oluşturmak için aşağıdaki butona bas ❤️
   </div>
+
+</div>
 
   <div class="controls">
 
@@ -37,16 +50,7 @@
       Yeni Soru Oluştur
     </button>
 
-  
 
-
-<button onclick="addFavorite()">
-  Favorilere Ekle ⭐
-</button>
-
-<button onclick="showFavorites()">
-  Favorilerim ❤️
-</button>
 <button onclick="copyQuestion()">
     Soruyu Kopyala 📋
 </button>
