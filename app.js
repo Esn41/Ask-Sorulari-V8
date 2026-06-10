@@ -1001,7 +1001,7 @@ const data = {
   ]
 };
 
-let questionCount = 0;
+
 let lastQuestion = "";
 
 function randomItem(arr){
@@ -1037,11 +1037,7 @@ if(card){
     }, 300);
 }
 
-  questionCount++;
-
-  const count = document.getElementById("count");
-  if(count) count.innerText = questionCount;
-}
+  
   
 
 
