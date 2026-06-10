@@ -161,8 +161,8 @@ const data = {
 "❤️ Birlikte geçirdiğimiz en unutulmaz gün hangisiydi?",
 "❤️ Benim yanımda hissettiğin en güzel duygu nedir?",
 "❤️ Aşkımızı bir şarkı sözüyle anlatsan ne derdin?",
-"❤️ Benimle gelecekte yapmak istediğin ilk şey nedir?"
-   "❤️ Bana dair en sevdiğin anı tekrar yaşayabilsen hangisini seçerdin?",
+"❤️ Benimle gelecekte yapmak istediğin ilk şey nedir?",
+  "❤️ Bana dair en sevdiğin anı tekrar yaşayabilsen hangisini seçerdin?",
 "❤️ Benimle ilgili seni en çok şaşırtan şey neydi?",
 "❤️ İlk kez bana karşı güçlü duygular hissettiğin an hangisiydi?",
 "❤️ Birlikte geçirdiğimiz en romantik akşam hangisiydi?",
@@ -211,7 +211,7 @@ const data = {
 "❤️ Beni hayatında görmek neden önemli?",
 "❤️ Birlikte gerçekleştireceğimiz ilk büyük hedef ne olsun isterdin?",
 "❤️ Benim yanımda hissettiğin huzuru nasıl tarif edersin?",
-"❤️ Gelecekte bizi düşündüğünde seni en çok ne mutlu ediyor?"
+"❤️ Gelecekte bizi düşündüğünde seni en çok ne mutlu ediyor?",
 "❤️ Benimle ilgili seni en çok heyecanlandıran şey nedir?",
 "❤️ Bana ilk kez âşık olduğunu ne zaman hissettin?",
 "❤️ Birlikte geçirdiğimiz hangi günü tekrar yaşamak isterdin?",
@@ -670,7 +670,7 @@ const data = {
 "🌙 Bir günlüğüne geçmişte yaşayabilsen hangi dönemi seçerdin?",
 "🌙 Hayatında seni en çok ne güçlendirdi?",
 "🌙 Sence iyi bir insan olmak ne demektir?",
-"🌙 Gelecekte hatırlanmak istediğin şey nedir?"
+"🌙 Gelecekte hatırlanmak istediğin şey nedir?",
 
     "🌙 İlişkimiz sana ne öğretti?",
     "🌙 Sence gerçek sevgi nedir?",
@@ -885,7 +885,7 @@ const data = {
 "🔥 Benim hangi davranışım seni bana daha çok yaklaştırıyor?",
 "🔥 Bana dair kalbinde sakladığın şey nedir?",
 "🔥 Aramızdaki bağı gelecekte nasıl görüyorsun?",
-"🔥 Bana söylemek istediğin son cesur cümle ne olurdu?"
+"🔥 Bana söylemek istediğin son cesur cümle ne olurdu?",
 "🔥 Bende seni en çok etkileyen şey nedir?",
 "🔥 Bana ilk ne zaman farklı hissettin?",
 "🔥 Bende en çekici bulduğun özellik nedir?",
