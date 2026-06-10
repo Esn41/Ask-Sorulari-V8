@@ -1120,3 +1120,12 @@ function startQuestions(){
 
   generateQuestion();
 }
+function selectHomeCategory(category, element){
+  document.getElementById("homeCategory").value = category;
+
+  document.querySelectorAll(".category-card").forEach(card => {
+    card.classList.remove("active");
+  });
+
+  element.classList.add("active");
+}
