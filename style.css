@@ -70,7 +70,7 @@ h1{
 
 .question-card{
   position:relative;
-  min-height:430px;
+  min-height:520px;
   margin:24px 0 26px;
   padding:34px 24px;
   display:flex;
@@ -95,7 +95,7 @@ h1{
 }
 
 #question{
-  font-size:31px;
+  font-size:36px;
   line-height:1.45;
   font-weight:950;
   text-align:center;
