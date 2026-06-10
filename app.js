@@ -95,7 +95,7 @@ const data = {
 "❤️ Birlikte sonsuza kadar mutlu olabilir miyiz?",
 "❤️ Beni anlatan bir şarkı sözü seçebilir misin?",
 "❤️ Senin için aşk mı ben mi?",
-"❤️ İlişkimizin en unutulmaz günü hangisi?"
+"❤️ İlişkimizin en unutulmaz günü hangisi?",
 
     "❤️ Beni ilk gördüğünde ne hissettin?",
     "❤️ Benimle ilgili en sevdiğin anı hangisi?",
@@ -111,7 +111,7 @@ const data = {
     "❤️ Beni özlediğinde aklına ilk ne geliyor?",
     "❤️ Bana sarıldığında ne hissediyorsun?",
     "❤️ Aşkımızı bir şarkı anlatsa hangi şarkı olurdu?",
-    "❤️ Birlikte kurduğun en güzel hayal ne?"
+    "❤️ Birlikte kurduğun en güzel hayal ne?",
  "❤️ Benimle ilgili en sevdiğin küçük detay nedir?",
 "❤️ Birlikte yaşlanırken en çok neyi paylaşmak isterdin?",
 "❤️ Sana göre aşkımızın en özel tarafı nedir?",
@@ -261,7 +261,7 @@ const data = {
 "❤️ Benim hangi davranışım seni bana daha çok bağlıyor?",
 "❤️ Birlikte yaşayacağımız en güzel sürpriz ne olabilir?",
 "❤️ Bana olan sevgini anlatan üç kelime nedir?",
-"❤️ Gelecekte bizi düşündüğünde seni en çok heyecanlandıran şey nedir?"
+"❤️ Gelecekte bizi düşündüğünde seni en çok heyecanlandıran şey nedir?",
 ],
 
   eglenceli: [
@@ -360,7 +360,7 @@ const data = {
 "😂 Birlikte bir gün boyunca sadece şarkı sözleriyle konuşsak ne olurdu?",
 "😂 Hangimiz daha çok komik durumlara düşer?",
 "😂 Birlikte zaman makinesi bulsak ilk hangi yıla giderdik?",
-"😂 Benim en komik huyumun Oscar ödülü alsa adı ne olurdu?"
+"😂 Benim en komik huyumun Oscar ödülü alsa adı ne olurdu?",
 "😂 Beraber görünmez olsak ilk ne yapardık?",
 "😂 Hangimiz daha çok yemek yer?",
 "😂 Bir günlüğüne yer değiştirsek ilk ne yapardın?",
@@ -457,7 +457,7 @@ const data = {
 "😂 Hangimiz daha çok inatçı?",
 "😂 Birlikte emoji dili oluştursak ilk kuralı ne olurdu?",
 "😂 Benimle ilgili seni en çok güldüren şey nedir?",
-"😂 Birlikte zaman makinesi bulsak ilk hangi yıla giderdik?"
+"😂 Birlikte zaman makinesi bulsak ilk hangi yıla giderdik?",
 
     "😂 Beraber görünmez olsak ilk ne yapardık?",
     "😂 Hangimiz daha çok trip atar?",
@@ -473,7 +473,7 @@ const data = {
     "😂 Hangimiz daha fazla uyur?",
     "😂 Birlikte komik bir video çeksek konusu ne olurdu?",
     "😂 Benimle dalga geçtiğin en tatlı şey ne?",
-    "😂 Beraber kaybolsak hangimiz yolu bulurdu?"
+    "😂 Beraber kaybolsak hangimiz yolu bulurdu?",
   ],
 
   derin: [
@@ -573,7 +573,7 @@ const data = {
 "🌙 Bir insanın en büyük hayali ne olmalı?",
 "🌙 Hayatında seni en çok değiştiren kişi kimdi?",
 "🌙 Sence iyi bir insan olmak ne demektir?",
-"🌙 Gelecekte hatırlanmak istediğin şey nedir?"
+"🌙 Gelecekte hatırlanmak istediğin şey nedir?",
 "🌙 Hayatında seni en çok değiştiren olay neydi?",
 "🌙 Kendin hakkında öğrendiğin en önemli şey nedir?",
 "🌙 Sence gerçek mutluluk nedir?",
@@ -686,7 +686,7 @@ const data = {
     "🌙 Hayatında benim yerim nasıl bir yerde?",
     "🌙 Bana karşı en çok neye değer veriyorsun?",
     "🌙 Birlikte aşmamız gereken en önemli şey ne?",
-    "🌙 Kalbin bana en çok ne söylemek isterdi?"
+    "🌙 Kalbin bana en çok ne söylemek isterdi?",
   ],
 
   cesur: [
@@ -787,7 +787,7 @@ const data = {
 "🔥 Beni düşündüğünde aklına gelen ilk his nedir?",
 "🔥 Bana karşı hissettiğin sevgiyi nasıl gösterirsin?",
 "🔥 Aramızdaki en unutulmaz duygu hangisiydi?",
-"🔥 Bana söylemek istediğin en cesur söz ne olurdu?"
+"🔥 Bana söylemek istediğin en cesur söz ne olurdu?",
     "🔥 Bana karşı ilk kıskançlığını hatırlıyor musun?",
 "🔥 Bende seni en çok etkileyen gülüş mü bakış mı?",
 "🔥 Bana karşı hissettiğin en yoğun an hangisiydi?",
@@ -981,7 +981,7 @@ const data = {
 "🔥 Beni düşündüğünde kalbin ne söylüyor?",
 "🔥 Bana karşı hissettiğin en samimi duygu nedir?",
 "🔥 Aramızdaki en özel anı hangisi?",
-"🔥 Bana söylemek istediğin son cesur cümle ne olurdu?"
+"🔥 Bana söylemek istediğin son cesur cümle ne olurdu?",
 
     "🔥 Bende seni en çok etkileyen şey ne?",
     "🔥 Bana ilk ne zaman farklı hissettin?",
@@ -997,7 +997,7 @@ const data = {
     "🔥 Bana karşı en yoğun hissettiğin an hangisiydi?",
     "🔥 Beni ilk gördüğünde aklından ne geçti?",
     "🔥 Bana söylemek istediğin cesur bir cümle ne?",
-    "🔥 Benimle ilgili en özel düşüncen ne?"
+    "🔥 Benimle ilgili en özel düşüncen ne?",
   ]
 };
 
