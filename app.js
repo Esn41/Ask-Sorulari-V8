@@ -1088,3 +1088,25 @@ function toggleMenu(){
     menu.style.display = "block";
   }
 }
+let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
+
+function toggleFavorite(question) {
+  if (favorites.includes(question)) {
+    favorites = favorites.filter(q => q !== question);
+  } else {
+    favorites.push(question);
+  }
+
+  localStorage.setItem("favorites", JSON.stringify(favorites));
+  renderFavorites();
+}
+
+function renderFavorites() {
+  const favoritesList = document.getElementById("favoritesList");
+
+  if (!favoritesList) return;
+
+  favoritesList.innerHTML = favorites
+    .map(q => `<div class="favorite-item">${q}</div>`)
+    .join("");
+}
