@@ -1071,15 +1071,14 @@ function toggleSideMenu(){
   menu.classList.toggle("open");
 }
 let startX = 0;
-let currentQuestion = "";
-let previousQuestion = "";
+let historyQuestions = [];
 
-window.addEventListener("DOMContentLoaded", () => {
+window.addEventListener("load", () => {
   const card = document.querySelector(".question-card");
   const questionBox = document.getElementById("question");
 
   if(!card || !questionBox) return;
-currentQuestion = questionBox.innerText;
+
   card.addEventListener("touchstart", (e) => {
     startX = e.touches[0].clientX;
   });
@@ -1088,19 +1087,16 @@ currentQuestion = questionBox.innerText;
     const endX = e.changedTouches[0].clientX;
     const diff = endX - startX;
 
-    if(diff > 60){
-  previousQuestion = questionBox.innerText;
+    if(diff > 70){
+      historyQuestions.push(questionBox.innerText);
+      generateQuestion();
+    }
 
-  generateQuestion();
-
-  setTimeout(() => {
-    currentQuestion = questionBox.innerText;
-  }, 350);
-}
-
-    if(diff < -60 && previousQuestion){
-      questionBox.innerText = previousQuestion;
-      currentQuestion = previousQuestion;
+    if(diff < -70 && historyQuestions.length > 0){
+      questionBox.innerText = historyQuestions.pop();
     }
   });
 });
+  
+
+  
