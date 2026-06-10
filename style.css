@@ -257,3 +257,11 @@ body{
   font-size:22px;
   cursor:pointer;
 }
+.question-card{
+  transition:transform .35s ease, opacity .35s ease;
+}
+
+.question-card.change{
+  opacity:0;
+  transform:translateX(-40px) scale(.96);
+}
