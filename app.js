@@ -1044,29 +1044,7 @@ if(card){
 }
   
 
-function addFavorite(){
-  const question = document.getElementById("question").innerText;
-  let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
 
-  if(!favorites.includes(question)){
-    favorites.push(question);
-    localStorage.setItem("favorites", JSON.stringify(favorites));
-    alert("⭐ Favorilere eklendi!");
-  } else {
-    alert("Bu soru zaten favorilerde ❤️");
-  }
-}
-
-function showFavorites(){
-  const favorites = JSON.parse(localStorage.getItem("favorites")) || [];
-
-  if(favorites.length === 0){
-    alert("Henüz favori soru yok ❤️");
-    return;
-  }
-
-  alert(favorites.join("\n\n"));
-}
 
 function copyQuestion(){
   const text = document.getElementById("question").innerText;
@@ -1088,48 +1066,5 @@ function randomCategory(){
 }
 
 window.onload = generateQuestion;
-function toggleMenu(){
-  const menu = document.getElementById("menu");
 
-  if(menu.style.display === "block"){
-    menu.style.display = "none";
-  }else{
-    menu.style.display = "block";
-  }
-}
-let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
 
-function toggleFavorite(question) {
-  if (favorites.includes(question)) {
-    favorites = favorites.filter(q => q !== question);
-  } else {
-    favorites.push(question);
-  }
-
-  localStorage.setItem("favorites", JSON.stringify(favorites));
-  renderFavorites();
-}
-
-function renderFavorites() {
-  const favoritesList = document.getElementById("favoritesList");
-
-  if (!favoritesList) 
-    favoritesList.innerHTML = favorites
-  .map((q, i) => `
-    <div class="favorite-item">
-      <span>${q}</span>
-      <button class="delete-fav" onclick="removeFavorite(${i})">
-        🗑️
-      </button>
-    </div>
-  `)
-  .join("");
-}
-document.addEventListener("DOMContentLoaded", () => {
-  renderFavorites();
-});
-function removeFavorite(index) {
-  favorites.splice(index, 1);
-  localStorage.setItem("favorites", JSON.stringify(favorites));
-  renderFavorites();
-}
