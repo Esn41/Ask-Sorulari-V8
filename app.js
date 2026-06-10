@@ -1009,22 +1009,34 @@ function randomItem(arr){
 }
 
 function generateQuestion(){
+
+  const card = document.querySelector(".question-card");
   const category = document.getElementById("category").value;
   const list = data[category];
 
-  let question = randomItem(list);
+  card.classList.add("flip");
 
-  if(question === lastQuestion && list.length > 1){
-    question = randomItem(list);
-  }
+  setTimeout(() => {
 
-  lastQuestion = question;
-  document.getElementById("question").innerText = question;
+    let question = randomItem(list);
 
-  questionCount++;
-  const count = document.getElementById("count");
-  if(count) count.innerText = questionCount;
+    if(question === lastQuestion && list.length > 1){
+      question = randomItem(list);
+    }
+
+    lastQuestion = question;
+    document.getElementById("question").innerText = question;
+
+    questionCount++;
+
+    const count = document.getElementById("count");
+    if(count) count.innerText = questionCount;
+
+    card.classList.remove("flip");
+
+  }, 250);
 }
+  
 
 function addFavorite(){
   const question = document.getElementById("question").innerText;
